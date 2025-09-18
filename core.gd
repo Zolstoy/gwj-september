@@ -1,6 +1,7 @@
 extends Node
 
-@onready var mesh = %Mesh
+@onready var level = %Level
 
 func _ready() -> void:
-	(mesh.material as StandardMaterial3D).uv1_scale = Vector3(100, 100, 100)
+	level.scale.x *= 100.
+	level.scale.z *= 100.
